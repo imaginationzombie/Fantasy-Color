@@ -1,0 +1,716 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#3f0015", "surface-bright": "#353940", "on-background": "#dfe2eb", "outline": "#99907c", "inverse-primary": "#735c00", "tertiary-fixed": "#ffd9de", "secondary-fixed-dim": "#bdc8d3", "secondary-fixed": "#dae3f0", "tertiary-container": "#ff93a8", "on-primary-fixed-variant": "#574500", "surface-container-low": "#181c22", "on-tertiary": "#660027", "secondary": "#bdc8d3", "inverse-surface": "#dfe2eb", "on-primary-container": "#554300", "surface-container-highest": "#31353c", "on-error": "#690005", "on-primary-fixed": "#241a00", "secondary-container": "#3e4852", "background": "#10141a", "surface-tint": "#e9c349", "primary-fixed": "#ffe088", "primary-fixed-dim": "#e9c349", "on-surface": "#dfe2eb", "on-secondary-fixed": "#131d25", "surface-dim": "#10141a", "on-secondary-fixed-variant": "#3e4852", "on-error-container": "#ffdad6", "tertiary-fixed-dim": "#ffb2bf", "on-primary": "#3c2f00", "tertiary": "#ffbdc8", "surface": "#10141a", "error-container": "#93000a", "surface-container-lowest": "#0a0e14", "on-secondary": "#28313b", "on-surface-variant": "#d0c5af", "on-secondary-container": "#acb6c2", "surface-variant": "#31353c", "inverse-on-surface": "#2d3137", "surface-container-high": "#262a31", "primary": "#f2ca50", "surface-container": "#1c2026", "error": "#ffb4ab", "outline-variant": "#4d4635", "primary-container": "#d4af37", "on-tertiary-fixed-variant": "#871b3c", "on-tertiary-container": "#85193a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "gutter-mobile": "1rem", "space-xl": "3rem", "margin-mobile": "1.25rem", "margin-tablet": "2rem", "space-lg": "1.75rem", "space-xs": "0.25rem", "margin": "3rem", "gutter": "1.5rem" }, "fontFamily": { "body-md": ["Manrope"], "headline-xl-mobile": ["EB Garamond"], "body-sm": ["Manrope"], "headline-lg": ["EB Garamond"], "headline-xl": ["EB Garamond"], "body-lg": ["Manrope"], "headline-md": ["EB Garamond"], "label-sm": ["Space Grotesk"], "headline-sm": ["EB Garamond"], "label-md": ["Space Grotesk"], "label-lg": ["Space Grotesk"], "headline-lg-mobile": ["EB Garamond"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" }], "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-margin flex items-center justify-between gap-6"><div class="flex items-center gap-4 min-w-max"><img alt="Grimoire Press Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UeEysc9Zy3IlFB7xmZKo4JYzU3wER_Y-I8teNcVROJc_hcpgoxvsPEJ1D2DtZ6Tig9GsVuMJx_rjPmMyaEjK1cmQxJyM_nQjuoyfpEHJmx1BHJSdWDinR5e7UtUIB2Ssf2eHvnGIWziE0JXY_4hZZW7xq4wqJmPbx9PX8BTMmw2G344_V1HI1kdknYejiKVsj5GTEaQMgrAuMOsejjOiKSn8lM647oA2l0-UtjcP-0Q6gOVPkFk6FldaIi"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-wide leading-none">Grimoire Press</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-1">The Grand Fantasy Folio</span></div><div class="hidden xl:inline-flex items-center px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider ml-2">100 Masterwork Pages · 300 DPI Vector PDF</div></div><nav class="hidden lg:flex items-center gap-6" data-active-classes="text-primary font-semibold"><a aria-current="page" class="uppercase tracking-wider transition-colors text-primary font-semibold" data-path="packs" href="#">50/50 Packs</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="browse-all-100-pages" href="#">Browse All 100 Pages</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="print-specifications" href="#">Print Specifications</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="download-center" href="#">Download Center</a></nav><div class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_10px_rgba(242,202,80,0.2)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-18rem)]"><div class="flex flex-col w-full">
+<!-- Top Archival Notification Banner -->
+<div class="w-full bg-surface-container-lowest py-2.5 px-6">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="">Atelier Dispatch · Direct Vector PDF Download Channel</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="">Format: Native Vector PDF + High-Res TIF/JPG</span>
+<span class="text-primary font-bold">[Lossless CMYK]</span>
+</div>
+</div>
+</div>
+<!-- Hero Header Section -->
+<section class="relative w-full py-16 px-6 lg:px-margin bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10 space-y-6">
+<!-- Overline Tag -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-widest shadow-inner">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span class="">Split Edition · Two 50-Page Collector's PDF Folios</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-xl text-headline-xl text-on-surface max-w-4xl tracking-tight leading-tight">
+        The 100-Plate Fantasy <br class="hidden sm:inline">
+<span class="text-primary italic">Coloring Codex</span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+        Divided into two master volumes of 50 high-resolution, print-ready plates each. Optimized for A4 / US Letter printing on premium cardstock and watercolor paper.
+      </p>
+<!-- Overall Stats Bar -->
+<div class="w-full max-w-5xl mt-6 p-4 rounded-xl bg-surface-container-low shadow-xl">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4 divide-y md:divide-y-0 text-center">
+<div class="flex flex-col items-center justify-center p-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Archival Breadth</span>
+<span class="font-headline-sm text-headline-sm text-primary mt-1">100 Vector Plates</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Resolution</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">300 DPI Ultra HD</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Linework Purity</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">Zero Gradients</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Delivery</span>
+<span class="font-headline-sm text-headline-sm text-primary mt-1">Instant PDF &amp; ZIP</span>
+</div>
+<div class="col-span-2 md:col-span-1 flex flex-col items-center justify-center p-2"><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Binder Ready</span><span class="font-headline-sm text-headline-sm text-primary mt-1">3-Hole Drill Guides</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete 2-in-1 Master Bundle Bar -->
+<section class="w-full px-6 lg:px-margin -mt-4 mb-12">
+<div class="max-w-7xl mx-auto rounded-xl p-6 lg:p-8 bg-surface-container-high shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="absolute -right-12 -bottom-12 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="flex items-start gap-4 z-10">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-lg"><div class="flex flex-col gap-1.5 mr-0 md:mr-2"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Format Margin Guide:</span><div class="inline-flex items-center p-1 rounded-lg bg-surface-container-lowest border border-surface-container-highest"><button type="button" class="px-3 py-1.5 rounded text-primary bg-surface-container-high font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow">Clean Bleed</button><button type="button" class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">radio_button_checked</span>3-Ring Punch Ready</button></div></div>
+<span class="material-symbols-outlined text-[28px]">library_books</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Recommended Atelier Option</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider">All 100 Folios</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">The Grand 100-Plate Codex: Complete Archive</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">
+            Prefer the complete collection in one click? Download the Full 100-Plate Complete Codex (Combined 382 MB PDF) or download both volumes as a single curated uncompressed archive.
+          </p>
+</div>
+</div>
+<div class="shrink-0 z-10 w-full md:w-auto flex flex-col sm:flex-row items-stretch md:items-center gap-3"><div class="flex flex-col gap-1.5 mr-0 md:mr-2"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Format Margin Guide:</span><div class="inline-flex items-center p-1 rounded-lg bg-surface-container-lowest border border-surface-container-highest"><button type="button" class="px-3 py-1.5 rounded text-primary bg-surface-container-high font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow">Clean Bleed</button><button type="button" class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">radio_button_checked</span>3-Ring Punch Ready</button></div></div>
+<button class="px-6 py-4 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest font-bold hover:brightness-110 active:translate-y-0.5 transition-all flex items-center justify-center gap-3 shadow-xl" onclick="triggerDownloadModal('The Grand 100-Plate Complete Codex (Combined)', '382 MB Vector PDF + Lossless Master Assets')">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="">Download Complete 100-Page Archive</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Side-by-Side 50/50 Pack Comparison Cards -->
+<section class="w-full px-6 lg:px-margin mb-16">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-10 space-y-2">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Select Your Curated Folio</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Two Distinct 50-Plate Master Collections</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+<!-- VOLUME I CARD -->
+<div class="rounded-xl bg-surface-container p-6 lg:p-8 flex flex-col justify-between shadow-2xl relative group">
+<div class="space-y-6">
+<!-- Header Tag & Title -->
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-4">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider font-semibold">
+                Part I · 50 Master Plates
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Folio 01 – 50</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Volume I: Mythic Realms &amp; Sacred Guardians</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                Woodland Spirits, Celestial Dragons, Mythic Beasts, Citadels &amp; Ocean Sirens
+              </p>
+</div>
+<!-- Featured Cover Previews -->
+<div class="grid grid-cols-2 gap-4"><div class="aspect-[3/4] rounded-lg bg-surface-container-low overflow-hidden relative shadow-2xl group/img border border-primary/20"><img alt="Volume I Deluxe Master Cover Art" class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105 shadow-inner" src="https://lh3.googleusercontent.com/aida/AEtjO1VOqyY45sGyEEhzpVkzxcWYVH7XxprZKQYNy9irQfTrpLUL6YWUOfwk0cg3CuW-IT9N28yPpT9-znKd5S0xb2mrWsOxpk3Mw9T6IKg2gx0uk4n-foN5s3Qdvj7LYi35nnE-SWK1A4IysIfOQnp_Flgz2320akEH3W7vWsWqbN0oi_lQPgYmrdJbtT6XkxLsWTnNbpguAAjJLfI86odgEXvAS8QMLHCLvYDjBuvxBZKMuIrs7u0GKwyP73FX"><div class="absolute top-2 left-2 px-2.5 py-0.5 bg-surface-container-lowest/90 backdrop-blur rounded text-center border border-primary/30"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Deluxe Master Cover</span></div><div class="absolute bottom-2 left-2 right-2 px-2 py-1 bg-surface-container-lowest/80 backdrop-blur rounded text-center"><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Mythic Realms &amp; Sacred Guardians</span></div></div><div class="aspect-[3/4] rounded-lg bg-surface-container-low overflow-hidden relative shadow-inner group/img"><img alt="Celestial Coiled Dragon Linework" class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-500 group-hover/img:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1W89l2SEm7wAlIeA16h8aEkgbHPl6HyA1eonLd3cpk66WgCrIiRXKAxepHunwOjEieVEgXnfD5WC-g4ywpD6kBrKVth03dskFdr-h3eqkq0zcToMUbfRR25FjDhQSvqSx3jO-NjtVA7mE2Bv34Jb4W4KDUa8Rjca7vbrTC8mvssKU_Gq6tMuaGPQkHZf-ylKyOdKWI64gUIez3g6HwVZT8-9lPsd6rMid5QOHa4bbxtZhiUpE2pUsIdUrE8"><div class="absolute top-2 left-2 px-2.5 py-0.5 bg-surface-container-lowest/90 backdrop-blur rounded text-center"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sample Interior Plate</span></div><div class="absolute bottom-2 left-2 right-2 px-2 py-1 bg-surface-container-lowest/80 backdrop-blur rounded text-center"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Plate 24 · Coiled Dragon</span></div></div></div>
+<!-- Mini 5-Plate Strip -->
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-2">Sample Plate Spreads from Part I:</span>
+<div class="grid grid-cols-5 gap-2">
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Forest Wolpertinger" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1UbrTF5MfekI4nvE23cTs2hm8ZlRDd9mwxzRjoh9oTe8V_H9_N-5xWg14HIdNuhQjdJpiPJi2sAcN5TkMTLySHAyuRls6OXqgpVDVHx71sYemtLJx33POtyMCCH7XGQz4yGLYr7-PEeMiDb_rJgFYQOu6Q6V6QrLDbpP29BUDn1ahkTTzk06TIol0Tq9SfEHDwG4KhuOI7w5G_AEtlgWBiG7V0DVsM8D707CUsK-lWQIrTFursileCYp-3A">
+</div>
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Sun-Eagle Griffin" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1UeW7TLI4pSVCz_3PPz1je2N27lSiin1BIpoiloT434dwO8grof9V_5EFoqJI8-3Wy0rve_XEDM9RPTjNX5H2rXRqt7vM7z9Zco1UcrdYdUpfZZUUDKN8Jm1d96W16wgpT1L3f0bH4b4Myb0JT0bOm2EzRmtAXn8gUgU4ZR4YqHWcpmzH-Hx-DZpTU_RIUSjtapoO6mz1I5vLKXnfjv-Jf60VGeSbJTJFB9bDRmLQ5ipTSYu-X1ZwbcxSRj">
+</div>
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Abyssal Kraken" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1VX3EfzOorID8ZHMng10_plujMF8QASLuKcAN0vr9KTkTwHCi-yIcHjMof1m2YXkFMIH4FPry4mcn2d3OM9b7K1TxgD8FM7NxEKxDJp6hx6G116dn_pVV-eBspA3W8h27099bP9Gl7tAKz7Z5zC6SOlLz-7EHOg7dFK0gT6NiqCOWSxIXQHVoAsIHJngTh-YQikkicnSHDMnBAIt8msHjN7fG67X0dx2p6PyT9Go3fFeOpsx2kFUMi-X9U">
+</div>
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Celestial Kirin" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1Xsw5i-z2gE9paJSbiNb5m8YmZb8NwYdXQhWa_EsQZ1ViPMsESHo6FUXAnS3qjTNqNrw1GKQ3Ah9ZYpy2jdW0nlJs6o0_WcVT0x77xvtYrT4x3eOVPnGXgh1k0XSaqeGk7HKCzk4ziBduRaXtCNRbfhIA2XAr7TWWnsLmpw_36xnZcltYNyakg3TdvPvm4JAOiW86Ahy_yF934mNwrsMsIEByjriLPRHhHJKMnSi8zb9yqYudjuHq8SfyBE">
+</div>
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Crystal Cavern Unicorn" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1VllFmoRhiAWLOPjRIJoS1oT13_LRmZkLx_yoVNEm6soZiPw9R05A0gQR_RdMVPJDjSsJvXtPzWCQJ1OSmqZsQVjPr0NU_6mb1F2EiI6PonsgbUAHnWIPiHWVe8feReK9Kqs8vJD_ybRwMypFUUfstzxuQ6cGx9Y4bs4WAPO0eicHzJ7ypehHq7jwv4Ee_eVzfLMsslXZu-zw-jybrLuNowIywwVLjkiEZAwNNq6dVdMcgES1q6atP2ZA89">
+</div>
+</div>
+</div>
+<!-- Breakdown List -->
+<div class="space-y-2.5 pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Folio Curation Breakdown</span>
+<ul class="space-y-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class=""><strong class="text-on-surface font-semibold">Pages 01–15:</strong> Mythical Fauna, Forest Dryads &amp; Floral Mandalas</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class=""><strong class="text-on-surface font-semibold">Pages 16–28:</strong> Serpentine Dragons, Tide Drakes &amp; Star Beasts</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class=""><strong class="text-on-surface font-semibold">Pages 29–38:</strong> Floating Castles &amp; Ancient Obsidian Fortresses</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class=""><strong class="text-on-surface font-semibold">Pages 39–50:</strong> Deep-Sea Sirens, Kirin, Winged Sphinx &amp; Kelpie</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Action & Specs -->
+<div class="mt-8 pt-6 border-t border-surface-container-highest space-y-4"><div class="p-2.5 rounded bg-surface-container-lowest flex items-center justify-between gap-2 border border-surface-container-highest/60"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">radio_button_checked</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">3-Ring Binder Margins</span><span class="text-[11px] text-on-surface-variant leading-none">0.75" Inner Gutter + 3 Drill Marks</span></div></div><label class="inline-flex items-center gap-1 cursor-pointer"><input type="checkbox" checked="" class="accent-primary w-4 h-4 rounded"><span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Include</span></label></div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="">PDF Size: 184 MB</span>
+<span class="">300 DPI CMYK · A4 &amp; Letter</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-3">
+<button class="flex-1 py-3.5 px-4 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:brightness-110 active:translate-y-0.5 transition-all flex items-center justify-center gap-2 shadow-lg" onclick="triggerDownloadModal('Volume I: Mythic Realms &amp; Sacred Guardians (Pages 01–50)', '184 MB Archival Vector PDF')">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="">Download Vol. I PDF</span>
+</button>
+<button class="py-3.5 px-4 rounded bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-2" onclick="triggerDownloadModal('Volume I: Individual Lossless JPG Archive', '172 MB ZIP Archive')">
+<span class="material-symbols-outlined text-[18px]">folder_zip</span>
+<span class="">JPGs (ZIP)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- VOLUME II CARD -->
+<div class="rounded-xl bg-surface-container p-6 lg:p-8 flex flex-col justify-between shadow-2xl relative group">
+<div class="space-y-6">
+<!-- Header Tag & Title -->
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-4">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider font-semibold">
+                Part II · 50 Master Plates
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Folio 51 – 100</span>
+</div>
+<div><h3 class="font-headline-lg text-headline-lg text-on-surface">Volume II: Cosmic Dreams &amp; Celestial Wonders</h3><p class="font-body-md text-body-md text-on-surface-variant mt-2">Celestial Goddesses, Sacred Tree of Stars, Starry Nebulae &amp; Twilight Guardians</p></div>
+<!-- Featured Cover Previews -->
+<div class="grid grid-cols-2 gap-4"><div class="aspect-[3/4] rounded-lg bg-surface-container-low overflow-hidden relative shadow-2xl group/img border border-primary/20"><img alt="Volume II Deluxe Master Cover Art" class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105 shadow-inner" src="https://lh3.googleusercontent.com/aida/AEtjO1Xp7pJLzHuysGl2Z1x40GFXQRG6JpS-ovBoP1pOpC90gt7_7v0MKbD_6ppohc6adS9oLD9H2iBypqlpZmPkpL-MfSD-3vw0_7Uywn259C5G4KeR-TBI7g5Lfc4LeszIWsVqgc3SKEzRph1Xm3it73OcEONKtfBqcBJk8kSFEN1jamV24-UVzBq8QzRrgQrdc3S3zJijh19TCbHPz6C3EjYwV3yge8mCE2k7FC8kmMrvTeaNbfNXwG3iWbun"><div class="absolute top-2 left-2 px-2.5 py-0.5 bg-surface-container-lowest/90 backdrop-blur rounded text-center border border-primary/30"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Deluxe Master Cover</span></div><div class="absolute bottom-2 left-2 right-2 px-2 py-1 bg-surface-container-lowest/80 backdrop-blur rounded text-center"><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Cosmic Dreams &amp; Celestial Wonders</span></div></div><div class="aspect-[3/4] rounded-lg bg-surface-container-low overflow-hidden relative shadow-inner group/img"><img alt="Grand Finale Celestial World Tree Citadel" class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-500 group-hover/img:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VP8VedpcGiTF4UBafMmFpU7pZXXwgOLKCPnXUbX7B_e0SSmPAzkeDrcL3CA5H89kao9KtTpNry5y8Aqk4GEMQSfD3uv6hcNEljzkyKabifhTf49Pgd2_yKEeKFCy2OnycdJ1dMYgRIK7-Tnkpbrfs11vxIKDdEoxEtHbMiz4DItWvWeRqZbzZ7GJn29TE0LhzVAkcXFyL2tZkaxuuhHuW1HefA0gGSl5q7tYGLm97eO1TmbZ26sHjaCqw"><div class="absolute top-2 left-2 px-2.5 py-0.5 bg-surface-container-lowest/90 backdrop-blur rounded text-center"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sample Interior Plate</span></div><div class="absolute bottom-2 left-2 right-2 px-2 py-1 bg-surface-container-lowest/80 backdrop-blur rounded text-center"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Plate 100 · Grand World Tree</span></div></div></div>
+<!-- Mini 5-Plate Strip -->
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-2">Sample Plate Spreads from Part II:</span>
+<div class="grid grid-cols-5 gap-2">
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Starlit Orrery Astrologer" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1WY0pSYjcBxpd9CAPNt4fIZ1SwqYApD-Rua_k3R1iN63AnESinktL3rdbcA0-iejmKTfFIzws_EJGp_R3fT1k4Ms9Qcb0He1fvVGKNp1MOfLccoiEj7ld6HzxE8M8z_gnlzWJTU-Bf6oqdkzmQIzwvcX5EYRLfCgRV88d6OLqOMraMTpjqomj7-PRyWz8uNof_ni0VoETGT1gEDv4A2ukWSIVh5k4huxH_PWrv_bVgZ4pmcsJxxjYNQsAw">
+</div>
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Ferryman of Souls" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1XuH22q7FTlCmd2ErIHLoe4k5oaEvg_qYYLbSMzCrmXKTjwUjMT5rOAWBiwS5e92vE1Z3PlpTIUTlwikxHAsMzCz1vx3XoL5rJMfDiJ-tXWGCvNU3ndTXUKgWae029Zq8XQW2uDsDmR3uep0K_NIOC5XATzP21iHLbuBNB2VKza5wyvLyjXjtQipmQV7uUEB1imCzPCPJTJQCDSDWSPDt5j0nd_tqfZsU4w5bRb0d41kyuXu2xuk7eWZZj3">
+</div>
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Catacomb Sphinx" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1UO3ZcpIOYftgxGQNmzBi6rm0DLqIub5lEKWRCjjjIzT0gkQ2yNpM2fcaILTD3HPDxxngHmf2ag13vprgV-FYbTJpKSd9F13J1PhZcu2cv6XSyS00RT7UrxWA3STAFgLxAFTg-BEQjTo1cXBCR39PttlYlOyZsIG2aJr0edDfsJmIYYJp5V6LWI9Tde6hCQB1V9Lrr6BrjPqWJGYSAGpWmz9UhDKP6wQJ5fs1iMbp8ohSUB431l_jqEoGON">
+</div>
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Aurora Frost Dancer" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1VYVzJHZWfqBmFjvTtHVR8jF0ZQilNB0mQ6c2KaM8gVfeKx_kcV9CLoi6N5E2nh_xm3rYIixMU1P4r4uEXLZw1tLq-lIDSKDKeATcGRu9OBzs32Ss81AC0yK7CNnSQOiCssRbs0PYSvEBvBxX2Sa04QcweANArQhU5NOPPGQ4jQcm6nnG8ypnHpThij3sAg0r_1ivLjcBR0ASyUKNcnvdWE1vjjTkbB1CXoXkfAv1XpGNX7HBOoTmjFk-cJ">
+</div>
+<div class="aspect-[3/4] rounded bg-surface-container-lowest overflow-hidden shadow">
+<img alt="Swan Lake Ballerina" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida/AEtjO1VL5gcvch14aGYkse5S8QcoW9Ssaf-iYO7CnnAml4XlAxn-iwd1hD_pmZqicDI0Ze8SnfD2o6SqoCVeGtp9joU266FuBrUYTQzfSmm23DxXxMeH50La4tHBVCEmQg-B9A4ayHo8eJOGhHZ-zMVAGWtFK0pF3k_oA03Tp-LfztW_fw_r6WVc84ch9WrYE3q8jVU0H7wvDvpXy-HzyqmD2M6YT6JCptQq9acNdH5ZgNvnhOptmnIr3MszsPGo">
+</div>
+</div>
+</div>
+<!-- Breakdown List -->
+<div class="space-y-2.5 pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Folio Curation Breakdown</span>
+<ul class="space-y-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class=""><strong class="text-on-surface font-semibold">Pages 51–64:</strong> Surrealist Dreamscapes, Tarot Veils &amp; Labyrinths</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class=""><strong class="text-on-surface font-semibold">Pages 65–78:</strong> Solar Goddesses, Dragon Princesses &amp; Cathedrals</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class=""><strong class="text-on-surface font-semibold">Pages 79–89:</strong> Ethereal Dance Ballerinas &amp; Celestial Alicorns</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class=""><strong class="text-on-surface font-semibold">Pages 90–100:</strong> Catacomb Ossuaries &amp; Celestial World Tree Finale</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Action & Specs -->
+<div class="mt-8 pt-6 border-t border-surface-container-highest space-y-4"><div class="p-2.5 rounded bg-surface-container-lowest flex items-center justify-between gap-2 border border-surface-container-highest/60"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">radio_button_checked</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">3-Ring Binder Margins</span><span class="text-[11px] text-on-surface-variant leading-none">0.75" Inner Gutter + 3 Drill Marks</span></div></div><label class="inline-flex items-center gap-1 cursor-pointer"><input type="checkbox" checked="" class="accent-primary w-4 h-4 rounded"><span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Include</span></label></div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="">PDF Size: 198 MB</span>
+<span class="">300 DPI CMYK · A4 &amp; Letter</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-3">
+<button class="flex-1 py-3.5 px-4 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:brightness-110 active:translate-y-0.5 transition-all flex items-center justify-center gap-2 shadow-lg" onclick="triggerDownloadModal('Volume II: Cosmic Dreams &amp; Celestial Wonders (Pages 51–100)', '198 MB Archival Vector PDF')">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="">Download Vol. II PDF</span>
+</button>
+<button class="py-3.5 px-4 rounded bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-2" onclick="triggerDownloadModal('Volume II: Individual Lossless JPG Archive', '185 MB ZIP Archive')">
+<span class="material-symbols-outlined text-[18px]">folder_zip</span>
+<span class="">JPGs (ZIP)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Table of Contents & Plate Inspector -->
+<section class="w-full px-6 lg:px-margin mb-20">
+<div class="max-w-7xl mx-auto space-y-8">
+<!-- Section Header with Search & Tabs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-surface-container-high">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Table of Contents &amp; Gallery</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Inspect Plate Archives</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Review linework precision before sending directly to your local printer spooler.</p>
+</div>
+<!-- Volume Switcher Tabs -->
+<div class="flex items-center gap-2 bg-surface-container-high p-1.5 rounded-lg shrink-0">
+<button class="px-5 py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow transition-all" id="tab-vol-1" onclick="switchVolumeTab(1)">
+            Volume I (Pages 01–50)
+          </button>
+<button class="px-5 py-2.5 rounded text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold transition-all" id="tab-vol-2" onclick="switchVolumeTab(2)">
+            Volume II (Pages 51–100)
+          </button>
+</div>
+</div>
+<!-- Search & Filter Quick Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-surface-container-low p-4 rounded-xl">
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-highest/60 text-on-surface pl-10 pr-4 py-2 rounded text-body-sm focus:outline-none focus:ring-1 focus:ring-primary placeholder-on-surface-variant" id="plate-search" oninput="filterPlates(this.value)" placeholder="Search plate title or theme..." type="text">
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Line Thickness:</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm uppercase">[0.25pt - 1.2pt]</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">[300 DPI]</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm uppercase flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">radio_button_checked</span>3-Hole Drill Guides</span><div class="flex items-center gap-2 pl-2 border-l border-surface-container-highest"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider hidden md:inline">Hole Punch Guides:</span><button type="button" class="px-2.5 py-1 rounded bg-primary/20 text-primary border border-primary/30 font-label-sm text-label-sm uppercase flex items-center gap-1.5 hover:bg-primary hover:text-on-primary transition-all"><span class="material-symbols-outlined text-[16px]">adjust</span><span class="">3-Ring Overlay [ON]</span></button></div></div>
+</div>
+<!-- VOLUME 1 GALLERY GRID -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="grid-vol-1">
+<!-- Plate 1 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Ancient Forest Guardian Unicorn" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XWpeJ7J-4j8awQyZyhKvWV3y0ybHKiviKd5FWXEsPn-XEsPQ3k017eBmtUiops4r4eLdVZuX7HI-I-9ycUvkyMM6Hr7sl4fzVJrYoN_voBl1Z5KTNi_FpaR6je-1ORtuTOfbFvHSD9VpxqK16MGVGkt3Ok0l3RQzQaMv8TJl2GwmQwyhJvspnuENQjcz9tLw32swFOcJyE9xdOesElYCyy1AAUCZ8Bqlprz-HhTPjQOtUyARZJnw27ZDJq">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 08</div><div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 border border-primary/30 text-primary font-label-sm text-label-sm uppercase flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">radio_button_checked</span><span class="">3-Ring Gutter</span></div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div><div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 border border-primary/30 text-primary font-label-sm text-label-sm uppercase flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">radio_button_checked</span><span class="">3-Ring Gutter</span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Ancient Forest Guardian Unicorn</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Mythic Fauna</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 08: Ancient Forest Guardian Unicorn')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 2 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Celestial Coiled Dragon" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1W89l2SEm7wAlIeA16h8aEkgbHPl6HyA1eonLd3cpk66WgCrIiRXKAxepHunwOjEieVEgXnfD5WC-g4ywpD6kBrKVth03dskFdr-h3eqkq0zcToMUbfRR25FjDhQSvqSx3jO-NjtVA7mE2Bv34Jb4W4KDUa8Rjca7vbrTC8mvssKU_Gq6tMuaGPQkHZf-ylKyOdKWI64gUIez3g6HwVZT8-9lPsd6rMid5QOHa4bbxtZhiUpE2pUsIdUrE8">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 24</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Celestial Coiled Dragon &amp; Lotus</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Tide Drakes</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 24: Celestial Coiled Dragon &amp; Lotus')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 3 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Woodland Guardian Fairy" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XPtrWRP6CkoMSzcduN8peQJ8BGB9ev0fe4i81_kSy_dxicKghxtS7OtVBG3TT3r0mJSNNaDkoabxeq10HAqqWpWIdMo6oNpEscqR3p4PcR8w87ypLlTQHT1TfpOAbVROc4RCpPk95KT656yADHeKxZXoJcwb6VTLz48Gc3Zx1QIfVYQVUVG5mBmo7n87f57o4Da2S1oe_BS5DIaoqb7-_SpIJAGf6QBz8mlQBIYCSQjZ5KDoHFqqotpMMq">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 03</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Woodland Guardian Fairy &amp; Flora</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Forest Dryads</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 03: Woodland Guardian Fairy &amp; Flora')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 4 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Celestial Kirin Sovereign" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Xsw5i-z2gE9paJSbiNb5m8YmZb8NwYdXQhWa_EsQZ1ViPMsESHo6FUXAnS3qjTNqNrw1GKQ3Ah9ZYpy2jdW0nlJs6o0_WcVT0x77xvtYrT4x3eOVPnGXgh1k0XSaqeGk7HKCzk4ziBduRaXtCNRbfhIA2XAr7TWWnsLmpw_36xnZcltYNyakg3TdvPvm4JAOiW86Ahy_yF934mNwrsMsIEByjriLPRHhHJKMnSi8zb9yqYudjuHq8SfyBE">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 44</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Celestial Kirin Sovereign</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Legendary Beasts</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 44: Celestial Kirin Sovereign')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 5 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Abyssal Kraken &amp; Sunken Atlantis" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VX3EfzOorID8ZHMng10_plujMF8QASLuKcAN0vr9KTkTwHCi-yIcHjMof1m2YXkFMIH4FPry4mcn2d3OM9b7K1TxgD8FM7NxEKxDJp6hx6G116dn_pVV-eBspA3W8h27099bP9Gl7tAKz7Z5zC6SOlLz-7EHOg7dFK0gT6NiqCOWSxIXQHVoAsIHJngTh-YQikkicnSHDMnBAIt8msHjN7fG67X0dx2p6PyT9Go3fFeOpsx2kFUMi-X9U">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 48</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Abyssal Kraken &amp; Sunken Atlantis</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Deep-Sea Sirens</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 48: Abyssal Kraken &amp; Sunken Atlantis')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 6 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Sun-Eagle Griffin King" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1UeW7TLI4pSVCz_3PPz1je2N27lSiin1BIpoiloT434dwO8grof9V_5EFoqJI8-3Wy0rve_XEDM9RPTjNX5H2rXRqt7vM7z9Zco1UcrdYdUpfZZUUDKN8Jm1d96W16wgpT1L3f0bH4b4Myb0JT0bOm2EzRmtAXn8gUgU4ZR4YqHWcpmzH-Hx-DZpTU_RIUSjtapoO6mz1I5vLKXnfjv-Jf60VGeSbJTJFB9bDRmLQ5ipTSYu-X1ZwbcxSRj">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 41</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Sun-Eagle Griffin King</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Legendary Beasts</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 41: Sun-Eagle Griffin King')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 7 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Crystal Geode Cavern Unicorn" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VllFmoRhiAWLOPjRIJoS1oT13_LRmZkLx_yoVNEm6soZiPw9R05A0gQR_RdMVPJDjSsJvXtPzWCQJ1OSmqZsQVjPr0NU_6mb1F2EiI6PonsgbUAHnWIPiHWVe8feReK9Kqs8vJD_ybRwMypFUUfstzxuQ6cGx9Y4bs4WAPO0eicHzJ7ypehHq7jwv4Ee_eVzfLMsslXZu-zw-jybrLuNowIywwVLjkiEZAwNNq6dVdMcgES1q6atP2ZA89">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 12</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Crystal Cavern Unicorn</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Mythic Fauna</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 12: Crystal Cavern Unicorn')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 8 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Great Horned Wolpertinger" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1UbrTF5MfekI4nvE23cTs2hm8ZlRDd9mwxzRjoh9oTe8V_H9_N-5xWg14HIdNuhQjdJpiPJi2sAcN5TkMTLySHAyuRls6OXqgpVDVHx71sYemtLJx33POtyMCCH7XGQz4yGLYr7-PEeMiDb_rJgFYQOu6Q6V6QrLDbpP29BUDn1ahkTTzk06TIol0Tq9SfEHDwG4KhuOI7w5G_AEtlgWBiG7V0DVsM8D707CUsK-lWQIrTFursileCYp-3A">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 19</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Horned Forest Wolpertinger</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Mythic Beasts</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 19: Horned Forest Wolpertinger')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+</div>
+<!-- VOLUME 2 GALLERY GRID (Hidden by default or toggled) -->
+<div class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="grid-vol-2">
+<!-- Plate 9 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Celestial World Tree Citadel" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VP8VedpcGiTF4UBafMmFpU7pZXXwgOLKCPnXUbX7B_e0SSmPAzkeDrcL3CA5H89kao9KtTpNry5y8Aqk4GEMQSfD3uv6hcNEljzkyKabifhTf49Pgd2_yKEeKFCy2OnycdJ1dMYgRIK7-Tnkpbrfs11vxIKDdEoxEtHbMiz4DItWvWeRqZbzZ7GJn29TE0LhzVAkcXFyL2tZkaxuuhHuW1HefA0gGSl5q7tYGLm97eO1TmbZ26sHjaCqw">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 100</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Celestial World Tree &amp; Citadel</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Grand Finale</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 100: Celestial World Tree &amp; Citadel')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 10 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Arcane High Priestess Sanctuary" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1WBbbbOgSUOvRkxXnNv09Mem6cZ_srQAXMGnSy3c2OcV7cRD1xamu9ImgRUP5Q0EfwdOhrkgClfEPP-yoYbyhJJ2G3N3XQnjPBvg1ciEipi1S2axSd6Oe3rmlMBp4pMPjymuScDTt2HUk0Bf12gLR6iTVa9rJ9hDOwRiRzf9GpychbpIm4rrV2LgZ0GulvGMdtEe6Y7UVI6TqFjt6wnvKYIARJOQF8xLNTrnVL709xF9DHKv00AEvBGK_rl">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 72</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Arcane High Priestess of Veils</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Psyche &amp; Labyrinths</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 72: Arcane High Priestess of Veils')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 11 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Grand Esoteric Celestial Astrologer" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1WY0pSYjcBxpd9CAPNt4fIZ1SwqYApD-Rua_k3R1iN63AnESinktL3rdbcA0-iejmKTfFIzws_EJGp_R3fT1k4Ms9Qcb0He1fvVGKNp1MOfLccoiEj7ld6HzxE8M8z_gnlzWJTU-Bf6oqdkzmQIzwvcX5EYRLfCgRV88d6OLqOMraMTpjqomj7-PRyWz8uNof_ni0VoETGT1gEDv4A2ukWSIVh5k4huxH_PWrv_bVgZ4pmcsJxxjYNQsAw">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 58</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Starlit Orrery Astrologer</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Cosmic Surrealism</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 58: Starlit Orrery Astrologer')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 12 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Ferryman of the Catacomb River" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XuH22q7FTlCmd2ErIHLoe4k5oaEvg_qYYLbSMzCrmXKTjwUjMT5rOAWBiwS5e92vE1Z3PlpTIUTlwikxHAsMzCz1vx3XoL5rJMfDiJ-tXWGCvNU3ndTXUKgWae029Zq8XQW2uDsDmR3uep0K_NIOC5XATzP21iHLbuBNB2VKza5wyvLyjXjtQipmQV7uUEB1imCzPCPJTJQCDSDWSPDt5j0nd_tqfZsU4w5bRb0d41kyuXu2xuk7eWZZj3">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 91</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Ferryman of Subterranean Souls</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Shadow Crypts</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 91: Ferryman of Subterranean Souls')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 13 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Arcane Catacomb Feline Sphinx" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1UO3ZcpIOYftgxGQNmzBi6rm0DLqIub5lEKWRCjjjIzT0gkQ2yNpM2fcaILTD3HPDxxngHmf2ag13vprgV-FYbTJpKSd9F13J1PhZcu2cv6XSyS00RT7UrxWA3STAFgLxAFTg-BEQjTo1cXBCR39PttlYlOyZsIG2aJr0edDfsJmIYYJp5V6LWI9Tde6hCQB1V9Lrr6BrjPqWJGYSAGpWmz9UhDKP6wQJ5fs1iMbp8ohSUB431l_jqEoGON">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 94</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Arcane Crypt Feline Sphinx</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Shadow Crypts</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 94: Arcane Crypt Feline Sphinx')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 14 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Celestial Astrolabe of Ancient Tomb" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XVLDNH8K88wUA_tlz7rVD77AcpQMGRK-07bwMXV5oJLPh3ijCbfSJ74dksidqBYFUAPOv5mVasXTRMbTLRmMss4mahq8PqVy2qpQ5QWIDadOyFF0NnWeU_v_45mM1tVJZhM7wZ5qGRX586hhHUhdcP5PFcft_VtSpNJ8FgTFqFpS6gbdTGHxnGzeBnY4YAayx_9aM8e8TrsfYz-UUxdrs1J-7T-VATRo4jkTdR93fOSBAgP_WSKuJE7QI">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 97</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Astrolabe of the Ancient Tomb</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Shadow Crypts</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 97: Astrolabe of the Ancient Tomb')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 15 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Aurora Borealis Frost Dancer" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VYVzJHZWfqBmFjvTtHVR8jF0ZQilNB0mQ6c2KaM8gVfeKx_kcV9CLoi6N5E2nh_xm3rYIixMU1P4r4uEXLZw1tLq-lIDSKDKeATcGRu9OBzs32Ss81AC0yK7CNnSQOiCssRbs0PYSvEBvBxX2Sa04QcweANArQhU5NOPPGQ4jQcm6nnG8ypnHpThij3sAg0r_1ivLjcBR0ASyUKNcnvdWE1vjjTkbB1CXoXkfAv1XpGNX7HBOoTmjFk-cJ">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 81</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Aurora Borealis Frost Dancer</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Ethereal Dance</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 81: Aurora Borealis Frost Dancer')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+<!-- Plate 16 -->
+<div class="plate-card bg-surface-container p-4 rounded-xl shadow-xl flex flex-col justify-between group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container-lowest overflow-hidden relative mb-4">
+<img alt="Moonlit Swan Lake Ballerina" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VL5gcvch14aGYkse5S8QcoW9Ssaf-iYO7CnnAml4XlAxn-iwd1hD_pmZqicDI0Ze8SnfD2o6SqoCVeGtp9joU266FuBrUYTQzfSmm23DxXxMeH50La4tHBVCEmQg-B9A4ayHo8eJOGhHZ-zMVAGWtFK0pF3k_oA03Tp-LfztW_fw_r6WVc84ch9WrYE3q8jVU0H7wvDvpXy-HzyqmD2M6YT6JCptQq9acNdH5ZgNvnhOptmnIr3MszsPGo">
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-label-sm uppercase">Plate 85</div>
+<div class="absolute left-1.5 top-0 bottom-0 flex flex-col justify-around items-center py-6 pointer-events-none z-10"><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span><span class="w-2 h-2 rounded-full border border-primary/70 bg-surface-container-lowest/80 shadow" title="Punch Guide"></span></div></div>
+<div class="space-y-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface plate-title">Moonlit Swan Lake Ballerina</h4>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase">
+<span class="">Section: Ethereal Dance</span>
+<span class="">896 × 1200 px</span>
+</div>
+<button class="w-full mt-2 py-2 px-3 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2" onclick="triggerPrintModal('Plate 85: Moonlit Swan Lake Ballerina')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">1-Click Test Print</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Print Preparation & Recommended Stock Guide -->
+<section class="w-full px-6 lg:px-margin mb-24">
+<div class="max-w-7xl mx-auto space-y-8">
+<div class="border-b border-surface-container-high pb-4">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">Atelier Technical Dossier</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Print Preparation &amp; Recommended Stock Guide</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"><div class="p-6 rounded-xl bg-surface-container-low flex flex-col justify-between space-y-4 shadow-xl relative overflow-hidden"><div class="space-y-3"><div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">layers</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">Paper Recommendation</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">We recommend <strong>160–300 GSM Bristol Board</strong> (Smooth or Vellum), Hot Press Watercolor Paper (100% cotton), or Heavyweight Matte Presentation Cardstock. Avoid standard 80 GSM copy paper to prevent ink bleed-through.</p></div><div class="pt-4 border-t border-surface-container-highest"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">[Weight: 250 GSM Ideal]</span></div></div><div class="p-6 rounded-xl bg-surface-container-low flex flex-col justify-between space-y-4 shadow-xl relative overflow-hidden"><div class="space-y-3"><div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">tune</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">Printer Settings</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">In your printer dialog, select <strong>'Actual Size'</strong> or <strong>100% Scale</strong> (do not use 'Fit to Printable Area'). Folio plates are pre-calibrated with 0.5" outer gutter margins for wire-o, spiral, or archival portfolio sleeve binding.</p></div><div class="pt-4 border-t border-surface-container-highest"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">[Scaling: 100% Actual]</span></div></div><div class="p-6 rounded-xl bg-surface-container-low flex flex-col justify-between space-y-4 shadow-xl relative overflow-hidden border border-primary/30"><div class="space-y-3"><div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">radio_button_checked</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">3-Ring Binder &amp; Margin Guides</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Choose between <strong>3-Ring Binder Layout</strong> (0.75" inner margin with visual 4.25" / 8.5" drill alignment targets) or <strong>Clean Edge / Flush Mount</strong> (0.25" uniform borderless frame). Artwork remains uncropped.</p></div><div class="pt-4 border-t border-surface-container-highest"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">[0.75" Safe Punch Gutter]</span></div></div><div class="p-6 rounded-xl bg-surface-container-low flex flex-col justify-between space-y-4 shadow-xl relative overflow-hidden"><div class="space-y-3"><div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">brush</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">Coloring Mediums</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Tested rigorously for <strong>alcohol ink markers</strong> (Copic, Ohuhu, Blick Studio), soft-core colored pencils (Prismacolor Premier, Polychromos), and metallic fineliners. Crisp black lines prevent pigment muddying and feathering.</p></div><div class="pt-4 border-t border-surface-container-highest"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">[Solvent Compatible]</span></div></div></div>
+</div>
+</section>
+<!-- Download & Test Print Interactive Modal -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden items-center justify-center p-4" id="download-modal">
+<div class="bg-surface-container p-6 sm:p-8 rounded-xl max-w-lg w-full shadow-2xl relative space-y-6">
+<!-- Close Button -->
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface" onclick="closeDownloadModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] animate-spin">sync</span>
+<span class="">Preparing 300 DPI Archival Stream</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface leading-snug" id="modal-title">Volume I: Mythic Realms</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modal-desc">Generating lossless vector package from Grimoire Press master files...</p>
+</div>
+<!-- Animated Progress Bar -->
+<div class="space-y-2">
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-300 w-0" id="modal-progress-bar"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span id="modal-status-text" class="">Compiling uncompressed vector contours...</span>
+<span id="modal-percent-text" class="">0%</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded text-body-sm text-on-surface-variant space-y-1">
+<div class="flex items-center gap-2 text-on-surface font-semibold font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="">Print-Ready Verification</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Includes single-sided separation pages, zero back-print bleed, and embedded ICC CMYK color profiles.</p>
+</div>
+<div class="flex justify-end gap-3 pt-2">
+<button class="px-5 py-2.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider" onclick="closeDownloadModal()">
+          Dismiss
+        </button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Script for Tab Switching & Simulated Downloads -->
+<script>
+    function switchVolumeTab(volumeNum) {
+      const tab1 = document.getElementById('tab-vol-1');
+      const tab2 = document.getElementById('tab-vol-2');
+      const grid1 = document.getElementById('grid-vol-1');
+      const grid2 = document.getElementById('grid-vol-2');
+
+      if (volumeNum === 1) {
+        tab1.className = "px-5 py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow transition-all";
+        tab2.className = "px-5 py-2.5 rounded text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold transition-all";
+        grid1.classList.remove('hidden');
+        grid2.classList.add('hidden');
+      } else {
+        tab2.className = "px-5 py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow transition-all";
+        tab1.className = "px-5 py-2.5 rounded text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold transition-all";
+        grid2.classList.remove('hidden');
+        grid1.classList.add('hidden');
+      }
+    }
+
+    function filterPlates(query) {
+      const activeGrid = document.querySelector('#grid-vol-1:not(.hidden), #grid-vol-2:not(.hidden)');
+      if (!activeGrid) return;
+      const cards = activeGrid.querySelectorAll('.plate-card');
+      const lowerQuery = query.toLowerCase().trim();
+
+      cards.forEach(card => {
+        const title = card.querySelector('.plate-title').textContent.toLowerCase();
+        if (title.includes(lowerQuery) || lowerQuery === '') {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    let downloadInterval = null;
+
+    function triggerDownloadModal(title, details) {
+      const modal = document.getElementById('download-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDesc = document.getElementById('modal-desc');
+      const progressBar = document.getElementById('modal-progress-bar');
+      const statusText = document.getElementById('modal-status-text');
+      const percentText = document.getElementById('modal-percent-text');
+
+      modalTitle.textContent = title;
+      modalDesc.textContent = details;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+
+      progressBar.style.width = '0%';
+      percentText.textContent = '0%';
+      statusText.textContent = 'Allocating high-density memory buffer...';
+
+      let progress = 0;
+      clearInterval(downloadInterval);
+      downloadInterval = setInterval(() => {
+        progress += Math.floor(Math.random() * 15) + 10;
+        if (progress >= 100) {
+          progress = 100;
+          progressBar.style.width = '100%';
+          percentText.textContent = '100%';
+          statusText.textContent = 'Archival PDF payload ready! Transmission starting...';
+          clearInterval(downloadInterval);
+        } else {
+          progressBar.style.width = progress + '%';
+          percentText.textContent = progress + '%';
+          if (progress > 50) {
+            statusText.textContent = 'Rendering 300 DPI vector linework paths...';
+          }
+        }
+      }, 150);
+    }
+
+    function triggerPrintModal(plateName) {
+      triggerDownloadModal(plateName, 'Single-Plate High Resolution PDF (300 DPI A4/Letter Print Ready)');
+    }
+
+    function closeDownloadModal() {
+      const modal = document.getElementById('download-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      clearInterval(downloadInterval);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-12 mt-space-xl"><div class="max-w-7xl mx-auto px-6 lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"><div class="space-y-2"><h4 class="font-headline-sm text-headline-sm text-primary">Archival Substrate</h4><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Recommended paper weight: 250–300 gsm hot-pressed 100% cotton rag. Tested for graphite, gouache, alcohol markers, and heavy pigment ink washes.</p></div><div class="space-y-2"><h4 class="font-headline-sm text-headline-sm text-primary">Print Quality Guarantee</h4><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Native ultra-fine vector paths rasterized at uncompressed 300 DPI. Precision line weights curated for zero raster blooming at A3, A4, and US Letter scales.</p></div><div class="space-y-2"><h4 class="font-headline-sm text-headline-sm text-primary">Atelier Provenance</h4><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Each folio plate is hand-inked in dark surrealist tradition by Grimoire Press artisans. For discerning adult collectors, illustrators, and fine-art colorists.</p></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 bg-surface-container-low px-6 py-4 rounded"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">© 2025 Grimoire Press · The Grand Fantasy Folio. All rights reserved.</span><div class="flex items-center gap-4"><span class="font-label-sm text-label-sm text-primary">[300 DPI]</span><span class="font-label-sm text-label-sm text-primary">[VECTOR PDF]</span><span class="font-label-sm text-label-sm text-primary">[A3 ARCHIVAL]</span></div></div></div></footer>
+
+</body></html>
